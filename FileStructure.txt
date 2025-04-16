@@ -4142,9 +4142,9 @@ moje-portfolio
 │   │   │── Header
 │   │   │   │── Header.css
 │   │   │   └── Header.jsx
-│   │   └── Navbar
-│   │       │── Navbar.css
-│   │       │── Navbar.jsx
+│   │   └── NavBar
+│   │       │── NavBar.css
+│   │       │── NavBar.jsx
 │   │       └── NavBarItem.jsx
 │   │── index.css
 │   │── index.js

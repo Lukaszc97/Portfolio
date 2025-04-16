@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Kalkulator.css";  
 import BackButton from "../../../../../../components/BackButton";
+import { evaluate } from "mathjs";
 
 const Kalkulator = () => {
   const [input, setInput] = useState("");
@@ -9,21 +10,18 @@ const Kalkulator = () => {
 
   const handleCalculate = () => {
     try {
-      setInput(eval(input).toString());
+      setInput(evaluate(input).toString());
     } catch (error) {
       setInput("Błąd");
     }
   };
 
-  const handleClear = () => {
-    setInput("");
-  };
+  const handleClear = () => setInput("");
 
   return (
     <div className="kalkulator">
-      <BackButton/>
+      <BackButton />
       <h2>KALKULATOR</h2>
-
       <div className="display">
         <input
           type="text"
@@ -32,7 +30,6 @@ const Kalkulator = () => {
           className="input-display"
         />
       </div>
-
       <div className="buttons">
         <button onClick={() => handleClick("7")}><span>7</span></button>
         <button onClick={() => handleClick("8")}><span>8</span></button>

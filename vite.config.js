@@ -5,7 +5,7 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/moje-portfolio/",
+  base: "/Portfolio/", // Zmienione na /Portfolio/
   resolve: {
     alias: {
       crypto: path.resolve(__dirname, "node_modules/crypto-browserify"),

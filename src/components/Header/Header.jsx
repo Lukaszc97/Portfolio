@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../Navbar/Navbar';
+import NavBar from '../NavBar/NavBar';
 import './Header.css';
 import { Link } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const Header = () => {
           <div className="header-logo">
             <Link to="/">MojePortfolio</Link>
           </div>
-          <Nav />
+          <NavBar />
         </div>
       </header>
 
