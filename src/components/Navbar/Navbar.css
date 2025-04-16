@@ -1,0 +1,66 @@
+/* Główny kontener nawigacji */
+.navbar {
+  display: flex;
+  margin-left: auto;
+}
+
+/* Lista nawigacyjna */
+.navbar-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  align-items: center;
+  
+}
+
+/* Pojedynczy element menu */
+.navbar-item {
+  position: relative;
+  
+}
+
+/* Linki w menu */
+.navbar-link {
+  color: var(--text-secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Submenu */
+.submenu {
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2c3e50;
+  border-radius: 4px;
+  min-width: 160px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 10;
+  list-style: none;
+ 
+}
+
+/* Pokazanie submenu po najechaniu */
+.navbar-item:hover .submenu {
+  display: block;
+  width: 5px;
+}
+
+/* Stylowanie linków w submenu */
+.submenu-link {
+  
+  color: var(--text-secondary-color);
+  padding: 10px  5px ;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.submenu-link:hover {
+  background-color: var(--hover-primary-color);
+}

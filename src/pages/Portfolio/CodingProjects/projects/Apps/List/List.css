@@ -1,0 +1,76 @@
+/* Główne kontener dla aplikacji */
+.list-container {
+  max-width: 30vw;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.543);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Stylowanie pola tekstowego */
+.input-field {
+  width: 80%;
+  padding: 12px;
+  
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Stylowanie przycisku dodawania */
+.add-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #1c7a1f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+/* Stylowanie listy */
+.ul-list {
+  
+  width: 80%;
+  list-style: none;
+    margin-top: 15px;
+}
+
+.li-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 1px;
+  margin-bottom: 10px;
+  background-color: rgb(202, 211, 211);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+  
+}
+
+.li-item:hover {
+  background-color: #f9f9f9;
+}
+
+.delete-button {
+  background-color: #e53935;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}

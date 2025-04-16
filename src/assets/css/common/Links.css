@@ -1,0 +1,14 @@
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--hover-primary-color);
+  }
+  
+  a:active {
+    color: var(--hover-primary-color);
+  }
+  

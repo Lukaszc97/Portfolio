@@ -1,0 +1,13 @@
+ .timer-ring {
+ display: block;
+    border: 25px solid transparent;
+    border-top: 25px solid #3498db;
+    border-radius: 50%;
+    animation: spin 0.75s linear infinite;
+    display: none;  /* Domyślnie nie widoczny */
+
+  }
+  
+  .timer-ring.visible {
+    display: block; /* Animacja pojawi się tylko wtedy, gdy timer działa */
+  }
