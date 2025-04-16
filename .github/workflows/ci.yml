@@ -29,3 +29,6 @@ jobs:
 
       - name: List files for debugging
         run: ls -R
+      - name: Clear npm cache
+        run: npm cache clean --force
+
