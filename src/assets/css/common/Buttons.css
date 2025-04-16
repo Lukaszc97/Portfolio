@@ -1,6 +1,6 @@
 /* buttons.css */
 
-@import './variables.css';
+@import '../../../variables.css';
 
 button {
   padding: 10px 20px;
@@ -51,7 +51,7 @@ button:disabled {
 
 /* back-button.css */
 
-@import './variables.css';
+
 
 .back-button {
   position: fixed;

@@ -35,23 +35,57 @@ strong {
 }
 
 .result .win {
-  color: #2ecc71; /* Zielony, gdy użytkownik wygra */
+  color: #2ecc71;
 }
 
 .result .lose {
-  color: #e74c3c; /* Czerwony, gdy użytkownik przegra */
+  color: #e74c3c;
 }
 
 .result .draw {
-  color: #f39c12; /* Pomarańczowy, gdy jest remis */
+  color: #f39c12;
 }
 
 .result p:nth-child(1),
 .result p:nth-child(2) {
-
   font-size: 1.2rem;
   color: #2c3e50;
 }
+
 .result p:nth-child(3) {
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .game4-container {
+    max-width: 80vw;
+  }
+
+  .result {
+    width: 250px;
+    height: 90px;
+  }
+
+  .result p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .game4-container {
+    max-width: 90vw;
+    padding: 60px;
+
+    
+  }
+
+  .result {
+    margin-top: 30px;
+    width: 200px;
+    height: 80px;
+  }
+
+  .result p {
+    font-size: 0.9rem;
+  }
 }

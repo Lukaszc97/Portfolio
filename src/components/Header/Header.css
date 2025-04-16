@@ -41,6 +41,10 @@
   .header-logo {
     display: none !important;
   }
+  .header {
+    position: static;
+  }
+  .main-content {
+    margin-bottom: 0px;
+  }
 }
-
-

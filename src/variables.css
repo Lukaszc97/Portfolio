@@ -1,71 +1,38 @@
-/* global.css */
+:root {
+  /* Kolory */
+  --primary-color: #2c3e50;
+  --secondary-color: #3a4f6b;
+  --text-active-color: #17678a;
+  --text-hover-color: #ffffff;
+  --text-primary-color: #000000;
+  --text-secondary-color: #ffffff;
+  --section-background-color: rgb(202, 211, 211);
+  --text-title-color: #2c3e50;
 
-@import './variables.css';  /* Zmienne globalne */
+  --background-color: #ffffff;
+  --background-secondary-color: #3a4f6b;
+  --hover-primary-color: #476480;
 
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  font-family: var(--font-primary), sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-primary-color);
-  justify-content: center;
-  align-items: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Responsywność */
-@media (max-width: 768px) {
-  html, body {
-    font-size: 14px;
-  }
+  /* Kolor linków */
+  --link-color: var(--primary-color); /* Kolor linku */
   
-  .main-content {
-    padding: 1rem;
-  }
+  /* Kolor logo */
+  --logo-color: #ffffff;
 
-  h1 {
-    font-size: 1.8rem;
-  }
+  /* Dodatkowe kolory (np. dla cieni lub statusów) */
+  --error-color: #e74c3c;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
 
-  button {
-    padding: 8px 15px;
-    font-size: 0.9rem;
-  }
+  /* Cienie */
+  --box-shadow-light: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  --box-shadow-medium: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  --box-shadow-heavy: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  
+  --text-shadow-light: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  --text-shadow-medium: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  --text-shadow-heavy: 3px 3px 6px rgba(0, 0, 0, 0.2);
 
-  .back-button {
-    top: 20px;
-    right: 10px;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-content {
-    padding: 0.5rem;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  button {
-    padding: 6px 12px;
-    font-size: 0.8rem;
-  }
-
-  .start-button {
-    font-size: 1.2rem;
-    padding: 12px 25px;
-  }
-
-  .back-button {
-    top: 15px;
-    right: 10px;
-    font-size: 0.8rem;
-  }
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
 }

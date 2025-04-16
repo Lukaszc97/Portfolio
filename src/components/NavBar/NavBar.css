@@ -1,24 +1,24 @@
-/* Główny kontener nawigacji */
 .navbar {
   display: flex;
   margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  width: 100%;
 }
 
-/* Lista nawigacyjna */
 .navbar-list {
   display: flex;
   gap: 2rem;
   list-style: none;
   margin: 0;
   align-items: center;
+  justify-content: center;
 }
 
-/* Pojedynczy element menu */
 .navbar-item {
   position: relative;
 }
 
-/* Linki w menu */
 .navbar-link {
   color: var(--text-secondary-color);
   padding: 0.5rem 1rem;
@@ -28,7 +28,6 @@
   transition: all 0.3s ease;
 }
 
-/* Submenu */
 .submenu {
   padding: 0;
   position: absolute;
@@ -43,13 +42,11 @@
   list-style: none;
 }
 
-/* Pokazanie submenu po najechaniu */
 .navbar-item:hover .submenu {
   display: block;
   width: 5px;
 }
 
-/* Stylowanie linków w submenu */
 .submenu-link {
   color: var(--text-secondary-color);
   padding: 10px 5px;
@@ -61,7 +58,6 @@
   background-color: var(--hover-primary-color);
 }
 
-/* Media Queries dla urządzeń mobilnych */
 @media (max-width: 768px) {
   .navbar-list {
     gap: 1rem;
@@ -84,11 +80,17 @@
   .navbar {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+   
   }
 
   .navbar-list {
-    flex-direction: column;
+    flex-direction:row;
     gap: 1rem;
+    align-items: center;
+    padding: 0;
+    width: 100%;
   }
 
   .navbar-item {
@@ -100,6 +102,6 @@
   }
 
   .submenu {
-    min-width: 100%;
+    min-width: 130%;
   }
 }

@@ -1,5 +1,4 @@
-
-@import './variables.css';  /* Zmienne globalne */
+@import './variables.css'; 
 
 html, body {
   width: 100%;
@@ -12,12 +11,14 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-h1{
+
+h1 {
   position: relative;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
+
 h1::after {
   content: "";
   display: block;
@@ -31,6 +32,7 @@ h1::after {
   transform: scaleX(1);
   transform-origin: center;
 }
+
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -44,3 +46,35 @@ a:hover {
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  html, body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    margin: auto;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size:4rem;
+  }
+
+  h1 {
+    margin: 1rem 0;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+
+  a {
+    padding: 0.5rem;
+  }
+}
