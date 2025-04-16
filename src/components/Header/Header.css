@@ -36,3 +36,11 @@
   margin: 0;
   margin-bottom: 50px;
 }
+
+@media (max-width: 480px) {
+  .header-logo {
+    display: none !important;
+  }
+}
+
+

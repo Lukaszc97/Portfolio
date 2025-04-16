@@ -1,4 +1,5 @@
-/* Domyślne style layout */
+/* layout.css */
+
 .container {
   justify-content: center;
   align-items: center;
@@ -18,4 +19,35 @@
 .col {
   flex: 1;
   min-width: 200px;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .col {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+  
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .col {
+    min-width: 100%;
+  }
 }

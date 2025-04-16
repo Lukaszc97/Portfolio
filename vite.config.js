@@ -2,34 +2,43 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-// Eksport domyślnej konfiguracji Vite
 export default defineConfig({
-  // Wtyczka do obsługi Reacta
   plugins: [react()],
+  base: "/Portfolio/", // Podstawa dla GitHub Pages
   
-  // Baza URL — ważne przy deploymencie np. na GitHub Pages
-  base: "/Portfolio/",
-
-  // Rozwiązywanie aliasów dla bibliotek Node.js w środowisku przeglądarkowym
+  build: {
+    outDir: "dist", // Folder wynikowy
+    emptyOutDir: true, // Czyść folder przy każdym buildzie
+    rollupOptions: {
+      input: path.resolve(__dirname, "index.html"), // Wymuszamy ścieżkę do index.html
+      output: {
+        manualChunks: (id) => {
+          // Lepsza kontrola podziału chunków
+          if (id.includes("node_modules/react")) return "react-vendor";
+          if (id.includes("node_modules/react-router-dom")) return "router-vendor";
+          if (id.includes("src/")) return "app";
+        },
+        chunkFileNames: "assets/[name]-[hash].js",
+        assetFileNames: "assets/[name]-[hash][extname]",
+        entryFileNames: "assets/[name]-[hash].js"
+      }
+    }
+  },
+  
   resolve: {
     alias: {
-      crypto: path.resolve(__dirname, "node_modules/crypto-browserify"),
-      stream: path.resolve(__dirname, "node_modules/stream-browserify"),
-      util: path.resolve(__dirname, "node_modules/util/"),
-    },
+      "@": path.resolve(__dirname, "./src"), // Alias dla ścieżek
+      // Napraw problemy z polyfillami
+      "util": "util/",
+      "crypto": "crypto-browserify",
+      "stream": "stream-browserify",
+      "zlib": "browserify-zlib"
+    }
   },
-
-  // Można też dodać opcjonalnie fallbacki jeśli potrzebujesz np. do działania w przeglądarce
-  optimizeDeps: {
-    include: [
-      "crypto-browserify",
-      "stream-browserify",
-      "util",
-    ],
-  },
-
+  
+  // Konfiguracja dla środowiska przeglądarkowego
   define: {
-    // Potrzebne, gdy biblioteki używają zmiennej global
-    global: {},
-  },
+    "process.env": {},
+    global: "window"
+  }
 });
