@@ -5,7 +5,7 @@ import "./Portfolio.css";
 const Portfolio = () => {
   return (
     <div className="portfolio">
-      <h1>Moje Portfolio</h1>
+      <h1 className="title">Łukasz Cieślik</h1>
       <div className="portfolio-grid">
         <Link to="/portfolio/biography" className="portfolio-card">
         <h2>O mnie</h2>
@@ -14,10 +14,10 @@ const Portfolio = () => {
           <h2>Galeria Taneczna</h2>
           <p>Zobacz moje zdjęcia i filmy taneczne</p>
         </Link>
-        <Link to="/portfolio/coding-Projects" className="portfolio-card">
+       {/*  <Link to="/portfolio/coding-Projects" className="portfolio-card">
           <h2>Projekty Kodowania</h2>
           <p>Przeglądaj moje aplikacje i gry</p>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

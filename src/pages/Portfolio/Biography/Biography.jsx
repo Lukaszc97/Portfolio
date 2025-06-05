@@ -22,12 +22,12 @@ const Biography = () => {
         >
           Artystycznie
         </button>
-        <button
+        {/* <button
           className={`tab ${activeTab === "programowanie" ? "active" : ""}`}
           onClick={() => setActiveTab("programowanie")}
         >
           Programowanie
-        </button>
+        </button> */}
       </div>
 
       {/* Sekcja Artystycznie */}
@@ -140,6 +140,13 @@ const Biography = () => {
                   rel="noopener noreferrer"
                 >
                   Teatr Castello
+                </a>
+                <a
+                  href="https://teatrcastello.pl/component/content/article/2-uncategorised/84-lukasz-cieslik.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Teatr Castello-Łukasz Cieślik
                 </a>
               </div>
             </div>

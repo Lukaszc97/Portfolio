@@ -1,7 +1,7 @@
-/* buttons.css */
 
 @import '../../../variables.css';
 
+/* Ogólny styl dla przycisków */
 button {
   padding: 10px 20px;
   margin-top: 15px;
@@ -11,8 +11,24 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+/* Dla ciemnego trybu */
+.dark-theme button {
+  background-color: var(--background-secondary-color-dark);
+  color: var(--text-secondary-color-dark);
+}
+
+.dark-theme button:hover {
+  background-color: var(--hover-primary-color-dark);
+}
+
+.dark-theme button:active {
+  box-shadow: var(--box-shadow-dark);
+}
+
+/* Dla jasnego trybu */
 button:hover {
   background-color: var(--hover-primary-color);
 }
@@ -42,17 +58,14 @@ button:disabled {
     padding: 6px 12px;
     font-size: 0.8rem;
   }
-  
+
   .start-button {
     font-size: 1.2rem;
     padding: 12px 25px;
   }
 }
 
-/* back-button.css */
-
-
-
+/* Styl dla przycisku 'back-button' */
 .back-button {
   position: fixed;
   top: 40px;
@@ -78,6 +91,7 @@ button:disabled {
   transform: translateY(1px);
 }
 
+/* Responsywność dla 'back-button' */
 @media (max-width: 768px) {
   .back-button {
     top: 20px;
@@ -91,5 +105,70 @@ button:disabled {
     top: 20px;
     right: 10px;
     font-size: 0.8rem;
+  }
+}
+
+.theme-toggle-button {
+  position: fixed;
+  top: 5px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--dark-mode-button-color);
+  color: var(--text-secondary-color);
+  border: 1px solid ;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-light);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hover & Active efekty */
+.theme-toggle-button:hover {
+  background-color: var(--hover-primary-color);
+  transform: scale(1.1);
+  box-shadow: var(--box-shadow-medium);
+}
+
+.theme-toggle-button:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark theme wsparcie */
+.dark-theme .theme-toggle-button {
+  background-color: var(--dark-mode-button-color);
+  color: var(--text-primary-color);
+}
+
+.dark-theme .theme-toggle-button:hover {
+  background-color: var(--hover-primary-color-dark, #5a6d88);
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .theme-toggle-button {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle-button {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+    top: 8px;
+    right: 8px;
   }
 }

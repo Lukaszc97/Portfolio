@@ -13,6 +13,7 @@
   --background-secondary-color: #3a4f6b;
   --hover-primary-color: #476480;
 
+  --dark-mode-button-color:#0000007d;;
   /* Kolor linków */
   --link-color: var(--primary-color); /* Kolor linku */
   
@@ -35,4 +36,24 @@
 
   --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'Open Sans', sans-serif;
+
+
+
+
+}
+
+
+/*CIEMNY MOTYW/*/
+:root.dark-theme {
+  --primary-color: #1a252f;
+  --secondary-color: #2c3e50;
+  --background-color: #121212;
+  --background-secondary-color: #abc1dc;
+  --text-color: #e0e0e0;
+  --text-primary-color: #C7D0D9;
+  --text-secondary-color: #ffffff;
+  --text-title-color: #5f7c99;
+--dark-mode-button-color:#fafdff;;
+--section-background-color: rgb(15, 16, 16);
+
 }

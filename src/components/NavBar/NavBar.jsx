@@ -12,7 +12,7 @@ const NavBar = () => {
         text="Portfolio" 
         subItems={[{ to: "/portfolio/biography", text: "O Mnie" },
           { to: "/portfolio/dance-gallery", text: "Galeria Taneczna" },
-  { to: "/portfolio/coding-projects", text: "Projekty Kodowania" }
+  /* { to: "/portfolio/coding-projects", text: "Projekty Kodowania" } */
         ]}/>
         <NavBarItem to="/contact" text="Kontakt" />
       </ul>

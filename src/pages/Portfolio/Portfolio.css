@@ -10,7 +10,7 @@
    margin: auto;
     width: max-content;
     margin-bottom: 2rem;
-    color: var(--primary-color);
+    
 }
 
 .portfolio-grid {
@@ -44,3 +44,6 @@
     color: var(--text-secondary-color);
     margin-bottom: 0.5rem;
 }
+.title{
+    color: var(--text-title-color);
+  }

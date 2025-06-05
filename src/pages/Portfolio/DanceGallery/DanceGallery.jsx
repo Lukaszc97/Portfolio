@@ -8,7 +8,7 @@ const DanceGallery = () => {
   const [images, setImages] = useState([]);
   const [youtubeVideos, setYoutubeVideos] = useState([
     "https://www.youtube.com/watch?v=oCEkZUoIdL0",
-    "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    
   ]);
   const [localVideos, setLocalVideos] = useState([]);
 
