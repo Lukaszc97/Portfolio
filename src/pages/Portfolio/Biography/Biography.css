@@ -1,0 +1,203 @@
+@import '../../../variables.css';
+
+/* Kontener */
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--text-tittle-color);
+  margin-bottom: 1.5rem;
+}
+
+.biography-container {
+  justify-items: center;
+  padding: 3rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: var(--background-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--primary-color);
+}
+
+/* Przyciski do przełączania */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.tab {
+  background: transparent;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  color: var(--primary-color);
+}
+
+.tab:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  transform: scale(1.7);
+}
+
+.tab.active {
+  background-color: transparent;
+  color: var(--text-active-color);
+  font-weight: bold;
+}
+
+/* Sekcje */
+.biography-section {
+  visibility: hidden;
+  background-color: var(--section-backgroudcolor);
+  justify-items: center;
+  width: 80%;
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.934);
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  z-index: 1; 
+}
+
+.biography-section.show {
+  visibility: visible;
+}
+
+.biography-section:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.biography-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.biography-section p {
+  text-align: justify;
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.8;
+  color: var(--text-color);
+  padding: 0 2rem;
+  position: relative;
+  max-width: 600px;
+}
+
+.biography-section p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--background-color);
+  border-radius: 5px;
+}
+
+/* Sekcja TEAM Ornontowice */
+.team-ornontowice-section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: var(--background-color);
+  border: 3px solid var(--color-primary);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-section:hover {
+  transform: scale(1.03);
+}
+
+.team-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo-header img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.link {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.link a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid var(--color-primary);
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link a:hover {
+  background-color: var(--color-primary);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsywność */
+@media (max-width: 600px) {
+  .biography-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .biography-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .biography-section h2,
+  .team-ornontowice-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .biography-section p {
+    font-size: 1rem;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

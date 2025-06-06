@@ -1,0 +1,53 @@
+/* layout.css */
+
+.container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .col {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+  
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .col {
+    min-width: 100%;
+  }
+}

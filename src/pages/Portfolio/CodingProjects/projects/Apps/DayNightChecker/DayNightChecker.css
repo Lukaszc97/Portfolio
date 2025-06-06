@@ -1,0 +1,28 @@
+.day-night-container {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.365);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 200px;
+}
+
+
+
+p {
+  
+  margin-top: 15px;
+  font-weight: bold;
+}
+
