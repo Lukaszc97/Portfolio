@@ -238,7 +238,19 @@ const Biography = () => {
           </p>
         </div>
       )}
+      <div className="biography-summary-floating">
+  <h2>Gdzie prowadziłem zajęcia:</h2>
+  <ul>
+    <li>Szkoła Tańca „Przytulaśna” – zajęcia grupowe i indywidualne</li>
+    <li>Uniwersytet Trzeciego Wieku w Tychach</li>
+    <li>Indywidualne lekcje tańca użytkowego i pierwszy taniec</li>
+    <li>Pomoc w MDK – choreografie i zajęcia</li>
+    <li>Zastępstwa z grupami w różnym wieku</li>
+  </ul>
+</div>
+
     </div>
+    
   );
 };
 

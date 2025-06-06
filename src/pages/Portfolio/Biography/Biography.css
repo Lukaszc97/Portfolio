@@ -201,3 +201,35 @@ h1 {
     align-items: flex-start;
   }
 }
+.biography-summary-floating {
+  position: absolute;
+  top: 100px; /* możesz dostosować */
+  right: 50px; /* odstęp od prawej */
+  width: 250px;
+  background: var(--section-backgroudcolor);
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15);
+  font-size: 0.85rem;
+  color: var(--text-color);
+  z-index: 10;
+  width: 200px;
+}
+
+.biography-summary-floating h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.biography-summary-floating ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+.biography-summary-floating li {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
