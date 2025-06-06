@@ -6,7 +6,7 @@
   "homepage": "https://Lukaszc97.github.io/Portfolio",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "git config user.name \"github-actions[bot]\" && git config user.email \"github-actions[bot]@users.noreply.github.com\" && gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
