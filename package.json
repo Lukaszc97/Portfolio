@@ -6,7 +6,7 @@
   "homepage": "https://Lukaszc97.github.io/Portfolio",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "GH_TOKEN=$GITHUB_TOKEN git config user.name \"github-actions[bot]\" && git config user.email \"github-actions[bot]@users.noreply.github.com\" && gh-pages -d dist",
+    "deploy": "git config user.name \"github-actions[bot]\" && git config user.email \"github-actions[bot]@users.noreply.github.com\" && gh-pages -d dist --repo \"https://$GITHUB_TOKEN@github.com/Lukaszc97/Portfolio.git\"",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
