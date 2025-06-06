@@ -18,7 +18,9 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
-
+.portfolio-grid p{
+    color: var(--text-secondary-color);
+}
 .portfolio-card {
     color: var(--text-secondary-color);
     background-color: var(--secondary-color); 
@@ -44,6 +46,7 @@
     color: var(--text-secondary-color);
     margin-bottom: 0.5rem;
     scale: 1.7;
+    
 }
 .title{
     color: var(--text-title-color);
