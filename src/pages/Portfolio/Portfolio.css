@@ -43,7 +43,19 @@
 .portfolio-card h2 {
     color: var(--text-secondary-color);
     margin-bottom: 0.5rem;
+    scale: 1.7;
 }
 .title{
     color: var(--text-title-color);
   }
+  .portfolio-note {
+  text-align: center;
+  color: red;
+  background: var(--section-background-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  scale: 1.5;
+}
+

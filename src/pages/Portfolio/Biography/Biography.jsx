@@ -15,7 +15,7 @@ const Biography = () => {
       <h1>O mnie</h1>
 
       {/* Przyciski do przełączania */}
-      <div className="tabs">
+      <div className="">
         <button
           className={`tab ${activeTab === "artystycznie" ? "active" : ""}`}
           onClick={() => setActiveTab("artystycznie")}
@@ -31,7 +31,7 @@ const Biography = () => {
       </div>
 
       {/* Sekcja Artystycznie */}
-      {activeTab === "artystycznie" && (
+      {/* {activeTab === "artystycznie" && ( */}
         <div className="biography-section show">
           <h2>Moja Pasja do Tańca</h2>
           <p>
@@ -42,21 +42,21 @@ const Biography = () => {
             emocje i radość.
           </p>
         </div>
-      )}
+     {/*  )} */}
 
-      {activeTab === "artystycznie" && (
+      {/* {activeTab === "artystycznie" && ( */}
         <div className="biography-section show">
           <h2>Doświadczenie Sceniczne</h2>
           <p>
-            Miałem okazję występować na różnych scenach, między innymi w Teatrze
-            Castello. Ze względu na to, że jeździliśmy w różne miejsca, każdy
-            występ był niepowtarzalnym doświadczeniem, pozwalającym mi rozwijać
-            się artystycznie oraz zdobywać cenne doświadczenia sceniczne.
+             Tańczyłem w spektaklach Państwowego Studium Wokalno-Baletowego w Gliwicach, występowałem w Teatrze Małym w Tychach, 
+    a także byłem członkiem grupy pantomimicznej Migreska. Dodatkowo miałem przyjemność występować w Teatrze Castello, 
+    co pozwoliło mi pogłębić umiejętności wyrazu scenicznego i pracy z ciałem oraz zdobyć cenne doświadczenie artystyczne.
+  
           </p>
         </div>
-      )}
+     {/*  )} */}
 
-      {activeTab === "artystycznie" && (
+      {/* {activeTab === "artystycznie" && ( */}
         <div className="biography-section show">
           <div className="team-section">
             <div className="logo-header">
@@ -83,8 +83,8 @@ const Biography = () => {
             </div>
           </div>
         </div>
-      )}
-      {activeTab === "artystycznie" && (
+      {/* )} */}
+      {/* {activeTab === "artystycznie" && ( */}
         <div className="biography-section show">
           <div className="team-section">
             <div className="logo-header">
@@ -93,7 +93,7 @@ const Biography = () => {
             </div>
             <div className="info">
               <p>
-                Prowadzę zajęcia z tańców standardowych w Akademii Tańca i Ruchu
+                Prowadzę zajęcia z tańców standardowych w szkole tańca
                 "Przytulaśna" w Tychach – zarówno grupowe, jak i indywidualne,
                 również dla par. To wyjątkowe miejsce, które łączy pasję do
                 tańca z przyjazną, niemal rodzinną atmosferą. Szkoła oferuje
@@ -111,11 +111,16 @@ const Biography = () => {
                   Przytulaśna
                 </a>
               </div>
+              
+
             </div>
+            
           </div>
+          
         </div>
-      )}
-      {activeTab === "artystycznie" && (
+        
+      {/* )} */}
+      {/* {activeTab === "artystycznie" && ( */}
         <div className="biography-section show">
           <div className="castello-section">
             <div className="logo-header">
@@ -151,9 +156,11 @@ const Biography = () => {
               </div>
             </div>
           </div>
+          
         </div>
-      )}
-      {activeTab === "artystycznie" && (
+        
+      {/* )} */}
+      {/* {activeTab === "artystycznie" && ( */}
         <div className="biography-section show">
           <div className="team-section">
             <div className="logo-header">
@@ -182,8 +189,21 @@ const Biography = () => {
             </div>
           </div>
         </div>
-      )}
-
+      {/* )} */}
+<div className="biography-section show">
+  <h2>Dodatkowa Działalność Taneczna</h2>
+  <p>
+    ○Chętnie pomagam znajomym przy tworzeniu układów tanecznych w ich grupach, dzieląc się doświadczeniem i pasją do tańca. 
+    To dla mnie świetny sposób, żeby rozwijać się i wspierać taneczną społeczność.
+  </p>
+  <p>
+    ○Prowadziłem też zajęcia na Uniwersytecie Trzeciego Wieku w Tychach, gdzie taniec pomagał uczestnikom czerpać radość z ruchu i aktywności.
+  </p>
+  <p>
+    ○Poza tym oferuję prywatne lekcje tańca użytkowego, prowadzę pierwsze tańce dla par oraz zabawy taneczne na imprezach, 
+    dzięki czemu każdy może poczuć się swobodnie i dobrze bawić się przy muzyce.
+  </p>
+</div>
       {/* Sekcja Programowanie */}
       {activeTab === "programowanie" && (
         <div className="biography-section show">
