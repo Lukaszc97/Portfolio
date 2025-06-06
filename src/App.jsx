@@ -40,7 +40,8 @@ import List from "./pages/Portfolio/CodingProjects/projects/Apps/List/List";
 
 function App() {
   return (
-    <Router>
+    
+    <Router basename="/Portfolio">
       <div className="app">
         <Header />
         <main className="main-content">
