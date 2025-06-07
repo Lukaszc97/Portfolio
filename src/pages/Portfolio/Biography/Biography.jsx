@@ -65,11 +65,7 @@ const Biography = () => {
             </div>
             <div className="ornontowice-info">
               <p>
-                Team Ornontowice, założona w 2014 roku przez Magdalenę i Macieja
-                Nagórskich, to przestrzeń, w której taniec staje się sposobem na
-                życie. Klub oferuje szeroki wachlarz zajęć zarówno dla dzieci,
-                jak i dorosłych, kształtując artystyczne talenty oraz promując
-                pasję do tańca.
+                Team Ornontowice, założona w 2014 roku przez Magdalenę i Macieja Nagórskich, to miejsce, w którym taniec staje się stylem życia. To właśnie tutaj uczę się tańca towarzyskiego, rozwijając swoją pasję i umiejętności pod okiem doświadczonych trenerów. Klub oferuje szeroki wachlarz zajęć dla dzieci i dorosłych, wspierając rozwój artystyczny i zamiłowanie do tańca.
               </p>
               <div className="link">
                 <a
