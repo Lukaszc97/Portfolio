@@ -6,7 +6,8 @@
   "homepage": "https://Lukaszc97.github.io/Portfolio",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -u \"Lukasz C <lukaszc1997@interia.pl>\" -r https://$GH_TOKEN@github.com/Lukaszc97/Portfolio.git"
+    "deploy": "gh-pages -d dist"
+
 ,
     "dev": "vite",
     "build": "vite build",
